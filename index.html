@@ -112,7 +112,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/environment/" style="font-size: 10px;">environment</a> <a href="/tags/jsf/" style="font-size: 10px;">jsf</a> <a href="/tags/诗/" style="font-size: 20px;">诗</a>
+						<a href="/tags/Ubuntun/" style="font-size: 10px;">Ubuntun</a> <a href="/tags/environment/" style="font-size: 10px;">environment</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/jsf/" style="font-size: 10px;">jsf</a> <a href="/tags/scala/" style="font-size: 10px;">scala</a> <a href="/tags/诗/" style="font-size: 20px;">诗</a>
 					</div>
 				</section>
 				
@@ -191,6 +191,105 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-Ubuntun-java-and-scala" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/12/19/Ubuntun-java-and-scala/" class="article-date">
+  	<time datetime="2015-12-19T04:55:36.000Z" itemprop="datePublished">2015-12-19</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/12/19/Ubuntun-java-and-scala/">Ubuntun java and scala environment set up</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="http://music.163.com/outchain/player?type=2&id=116869&auto=0&height=32"></iframe>
+
+<ul>
+<li><p>DownLoad java from <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" rel="external">here</a></p>
+</li>
+<li><p>Edit profile file</p>
+</li>
+</ul>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit  <span class="regexp">/etc/</span>profile</span><br></pre></td></tr></table></figure>
+<ul>
+<li>add JAVA_HOME at the end of this file：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jdk1.<span class="number">8.0</span>_45</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$JAVA_HOME</span>/lib:<span class="variable">$JAVA_HOME</span>/jre/lib:<span class="variable">$CLASSPATH</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$JAVA_HOME</span>/bin:<span class="variable">$JAVA_HOME</span>/jre/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>source command will take effect on path</li>
+</ul>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo <span class="keyword">source</span> <span class="regexp">/etc/</span>profile</span><br></pre></td></tr></table></figure>
+<ul>
+<li>test java is installed</li>
+</ul>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -<span class="property">version</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>DownLoad Scala from <a href="http://www.scala-lang.org/download/" target="_blank" rel="external">here</a></li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">tar</span> <span class="tag">-zxvf</span> <span class="tag">scala-2</span><span class="class">.11</span><span class="class">.7</span><span class="class">.tgz</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>put it to somewhere，for example</li>
+</ul>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp -r <span class="keyword">scala</span>-2.11.7 /usr/<span class="keyword">local</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>Edit profile file</li>
+</ul>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gedit  <span class="regexp">/etc/</span>profile</span><br></pre></td></tr></table></figure>
+<ul>
+<li>add two line at  the end of this file：</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> SCALA_HOME=/usr/<span class="built_in">local</span>/scala-<span class="number">2.11</span>.<span class="number">7</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$SCALA_HOME</span>/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>source command will take effect on path</li>
+</ul>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">source</span> <span class="regexp">/etc/</span>profile</span><br></pre></td></tr></table></figure>
+<ul>
+<li>test scala is installed</li>
+</ul>
+<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">scala</span> -<span class="keyword">version</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntun/">Ubuntun</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/scala/">scala</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-jsf" class="article article-type-post" itemscope itemprop="blogPost">
   
