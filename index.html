@@ -112,7 +112,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Ubuntun/" style="font-size: 10px;">Ubuntun</a> <a href="/tags/environment/" style="font-size: 10px;">environment</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/jsf/" style="font-size: 10px;">jsf</a> <a href="/tags/scala/" style="font-size: 10px;">scala</a> <a href="/tags/诗/" style="font-size: 20px;">诗</a>
+						<a href="/tags/Ubuntun/" style="font-size: 10px;">Ubuntun</a> <a href="/tags/environment/" style="font-size: 10px;">environment</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/jsf/" style="font-size: 10px;">jsf</a> <a href="/tags/scala/" style="font-size: 10px;">scala</a> <a href="/tags/tutor/" style="font-size: 10px;">tutor</a> <a href="/tags/vim/" style="font-size: 10px;">vim</a> <a href="/tags/诗/" style="font-size: 20px;">诗</a>
 					</div>
 				</section>
 				
@@ -191,6 +191,202 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-vim" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/21/vim/" class="article-date">
+  	<time datetime="2016-03-21T11:56:57.000Z" itemprop="datePublished">2016-03-21</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/21/vim/">vim tutor</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="298" height="52" src="http://music.163.com/outchain/player?type=2&id=36664350&auto=0&height=32"></iframe>
+
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vimtutor</span><br></pre></td></tr></table></figure>
+<pre><code>      ^
+      k          
+&lt; <span class="keyword">h</span>       <span class="keyword">l</span> &gt;             
+      j                    
+      v
+</code></pre><table>
+<thead>
+<tr>
+<th>command</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>q!</td>
+<td>This exits the editor, DISCARDING any changes you have made.</td>
+</tr>
+<tr>
+<td>x</td>
+<td>delete the character under the cursor</td>
+</tr>
+<tr>
+<td>i</td>
+<td>insert text</td>
+</tr>
+<tr>
+<td>A</td>
+<td>append text</td>
+</tr>
+<tr>
+<td>:wq</td>
+<td>to save a file and exit</td>
+</tr>
+<tr>
+<td>dw</td>
+<td>to delete a word</td>
+</tr>
+<tr>
+<td>d$</td>
+<td>to delete to the end of the line</td>
+</tr>
+<tr>
+<td>0</td>
+<td>(zero) to move to the start of the line</td>
+</tr>
+<tr>
+<td>dd</td>
+<td>to delete a whole line</td>
+</tr>
+<tr>
+<td>2dd</td>
+<td>to delete two lines</td>
+</tr>
+<tr>
+<td>u</td>
+<td>to undo the last commands</td>
+</tr>
+<tr>
+<td>U</td>
+<td>to fix a whole line</td>
+</tr>
+<tr>
+<td>CTRL+R</td>
+<td>To undo the undo’s</td>
+</tr>
+<tr>
+<td>p</td>
+<td>to put the line below the cursor</td>
+</tr>
+<tr>
+<td>rx</td>
+<td>to replace the character at the cursor with  x</td>
+</tr>
+<tr>
+<td>ce</td>
+<td>To change until the end of a word</td>
+</tr>
+<tr>
+<td>CTRL+G</td>
+<td>show your location in the file and the file status</td>
+</tr>
+<tr>
+<td>G</td>
+<td>move you to the bottom of the file</td>
+</tr>
+<tr>
+<td>gg</td>
+<td>move you to the start of the file</td>
+</tr>
+<tr>
+<td>50G</td>
+<td>move you to the 50 line</td>
+</tr>
+<tr>
+<td>:!</td>
+<td>followed by an external command to execute that command</td>
+</tr>
+<tr>
+<td>v</td>
+<td>To save part of the file, type  v  motion  :w FILENAME</td>
+</tr>
+<tr>
+<td>:r FILENAME</td>
+<td>retrieves disk file FILENAME and puts it below             the cursor position</td>
+</tr>
+<tr>
+<td>o</td>
+<td>open a line below the cursor and place you in Insert mode</td>
+</tr>
+<tr>
+<td>O</td>
+<td>open up a line ABOVE the cursor</td>
+</tr>
+<tr>
+<td>a</td>
+<td>to insert text AFTER the cursor</td>
+</tr>
+<tr>
+<td>R</td>
+<td>to replace more than one character</td>
+</tr>
+<tr>
+<td>y</td>
+<td>to copy text</td>
+</tr>
+<tr>
+<td>p</td>
+<td>to paste text</td>
+</tr>
+<tr>
+<td>:e</td>
+<td>Press  CTRL-D  and Vim will show a list of commands that start with “e”</td>
+</tr>
+<tr>
+<td>:help cmd</td>
+<td>to find help on  cmd</td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/tutor/">tutor</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vim/">vim</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
   
     <article id="post-Ubuntun-java-and-scala" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -677,7 +873,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2015 赱向远方
+    		&copy; 2016 赱向远方
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
